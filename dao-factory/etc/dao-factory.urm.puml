@@ -1,0 +1,68 @@
+@startuml
+package com.iluwatar.dao.factory {
+  class App {
+    - App()
+    - generatePet() : Pet {static}
+    + main(args : String[]) {static}
+  }
+  interface DAO {
+    + add(Pet) {abstract}
+    + delete(Pet) {abstract}
+    + get(String) : Pet {abstract}
+    + sofeDelete(Pet) {abstract}
+    + update(Pet) {abstract}
+  }
+  class DaoFactory {
+    - DaoFactory()
+    + getDAO(type : DaoType, dynamodb : AmazonDynamoDB) : DAO {static}
+  }
+  enum DaoType {
+    + ReadOnly {static}
+    + ReadWrite {static}
+    + valueOf(name : String) : DaoType {static}
+    + values() : DaoType[] {static}
+  }
+  class DynamoDBProvider {
+    - dynamodb : AmazonDynamoDB {static}
+    - DynamoDBProvider()
+    + getDynamoDB() : AmazonDynamoDB {static}
+    - listTables(result : ListTablesResult, method : String) {static}
+  }
+  class Pet {
+    - age : int
+    - name : String
+    - softDelete : boolean
+    - type : String
+    + Pet()
+    + getAge() : int
+    + getName() : String
+    + getType() : String
+    + isSoftDelete() : boolean
+    + setAge(age : int)
+    + setName(name : String)
+    + setSoftDelete(softDelete : boolean)
+    + setType(type : String)
+  }
+  class ReadOnlyDAOImpl {
+    - LOGGER : Logger {static}
+    - mapper : DynamoDBMapper
+    + ReadOnlyDAOImpl(dynamodb : AmazonDynamoDB)
+    + add(pet : Pet)
+    + delete(pet : Pet)
+    + get(name : String) : Pet
+    + sofeDelete(pet : Pet)
+    + update(pet : Pet)
+  }
+  class ReadWriteDAOImpl {
+    - mapper : DynamoDBMapper
+    + ReadWriteDAOImpl(dynamodb : AmazonDynamoDB)
+    + add(pet : Pet)
+    + delete(pet : Pet)
+    + get(name : String) : Pet
+    + sofeDelete(pet : Pet)
+    + update(pet : Pet)
+  }
+}
+ReadOnlyDAOImpl ..|> DAO 
+ReadWriteDAOImpl ..|> DAO 
+@enduml

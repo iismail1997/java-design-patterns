@@ -1,0 +1,7 @@
+Followed PMD documentation here: https://pmd.github.io/latest/pmd_userdocs_installation.html#running-pmd-via-command-line
+
+C:\Users\audreyywq\IdeaProjects\java-design-patterns-cs427\dao-factory>pmd.bat -d C:\Users\audreyywq\IdeaProjects\java-design-patterns-cs427\dao-factory -R rulesets/java/quickstart.xml -f text
+Nov 21, 2021 12:02:49 AM net.sourceforge.pmd.PMD encourageToUseIncrementalAnalysis
+WARNING: This analysis could be faster, please consider using Incremental Analysis: https://pmd.github.io/pmd-6.40.0/pmd_userdocs_incremental_analysis.html
+
+C:\Users\audreyywq\IdeaProjects\java-design-patterns-cs427\dao-factory>
