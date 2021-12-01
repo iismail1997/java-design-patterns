@@ -1,5 +1,6 @@
 package com.iluwatar.serviceadapter;
-import org.testng.annotations.Test;
+
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
