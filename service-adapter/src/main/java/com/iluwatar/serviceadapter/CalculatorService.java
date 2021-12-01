@@ -1,6 +1,6 @@
 package com.iluwatar.serviceadapter;
 
 public interface CalculatorService {
-    int addIntegers(int A, int B);
-    int divideIntegers(int A, int B);
+    int addIntegers(int a, int b);
+    int divideIntegers(int a, int b);
 }

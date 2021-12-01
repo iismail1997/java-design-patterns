@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.40.0" tim
+estamp="2021-11-30T19:40Nov 30, 2021 7:40:58 PM net.sourceforge.pmd.PMD encourageToUseIncrementalAnalysis
+WARNING: This analysis could be faster, please consider using Incremental Analysis: https://pmd.github.io/pmd-6.40.0/pmd_userdocs_incremental_analysis.html
+:58.847">
+<file name="C:\Mahe\MCS\SE\Term Project\java-design-patterns\service-adapter\src\main\java\com\iluwatar\serviceadapter\App.java">
+<violation beginline="14" endline="26" begincolumn="18" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="com.iluwatar.serviceadapter" class="App" externalInfoUrl="https://pmd.github.io/pmd-6.40.0/pmd_rules_java_design.
+html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+</file>
+</pmd>
