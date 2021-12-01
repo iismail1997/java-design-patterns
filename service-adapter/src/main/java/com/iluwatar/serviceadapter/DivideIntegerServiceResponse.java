@@ -2,6 +2,7 @@ package com.iluwatar.serviceadapter;
 
 public class DivideIntegerServiceResponse {
 
+    /*
     public class Envelope {
         public Body Body;
         public String SOAPENV;
@@ -17,6 +18,8 @@ public class DivideIntegerServiceResponse {
         public String xmlns = "http://tempuri.org";
         public int text;
     }
+
+     */
 
 
 

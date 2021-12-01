@@ -5,6 +5,7 @@ public class DivideIntegerServiceRequest {
     private String soapMethod;
     private String[] arguments;
 
+    /* Model that builds the remote service call request to divide  add two integers*/
     public DivideIntegerServiceRequest() {
     }
 
