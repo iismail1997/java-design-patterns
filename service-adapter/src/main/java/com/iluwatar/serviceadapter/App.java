@@ -19,6 +19,8 @@ public class App {
      * @param args command line args
      */
     public static void main(String[] args) {
-
+        CalculatorServiceImpl calculatorService = new CalculatorServiceImpl();
+        System.out.println("Result of Integers Addition: " + calculatorService.addIntegers(2, 3));
+        System.out.println("Result of Integers Division: " + calculatorService.divideIntegers(6,3));
     }
 }

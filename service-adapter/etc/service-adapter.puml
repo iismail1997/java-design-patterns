@@ -1,0 +1,38 @@
+@startuml 
+package com.iluwatar.serviceadapter {
+    class App{
+    + void main (String[] )
+    }
+
+    class ServiceAdapter{
+    + int divideIntegers (int A, int )
+    }
+
+    interface CalculatorService {
+    + int addIntegers (int A, int )
+    + int divideIntegers (int A, int )
+    }
+    class DivideIntegerServiceRequest{
+    - java.lang.String url
+    - java.lang.String soapMethod
+    - java.lang.String[] arguments
+    + void SoapServiceRequest ()
+    + java.lang.String getUrl ()
+    + void setUrl (String )
+    + java.lang.String getSoapMethod ()
+    + void setSoapMethod (String )
+    + java.lang.String[] getArguments ()
+    + void setArguments (String[] )
+    }
+    class DivideIntegerServiceResponse{
+    }
+    class CalculatorServiceImpl{
+    + int addIntegers (int A, int )
+    + int divideIntegers (int A, int )
+    }
+}
+CalculatorService <|.. CalculatorServiceImpl
+CalculatorServiceImpl --> ServiceAdapter
+ServiceAdapter --> DivideIntegerServiceRequest
+ServiceAdapter --> DivideIntegerServiceResponse
+@enduml
