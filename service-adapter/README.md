@@ -3,10 +3,8 @@ layout: pattern
 title: Service Adapter
 folder: service-adapter
 permalink: /patterns/service-adapter/
-categories: Architectural
+categories: Structural
 tags:
- - 
- - 
 ---
 
 ## Intent
