@@ -5,27 +5,27 @@ public class DivideIntegerServiceRequest {
     private String soapMethod;
     private String[] arguments;
 
-    public String getUrl() {
+    private String getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    private void setUrl(String url) {
         this.url = url;
     }
 
-    public String getSoapMethod() {
+    private String getSoapMethod() {
         return soapMethod;
     }
 
-    public void setSoapMethod(String soapMethod) {
+    private void setSoapMethod(String soapMethod) {
         this.soapMethod = soapMethod;
     }
 
-    public String[] getArguments() {
+    private String[] getArguments() {
         return arguments;
     }
 
-    public void setArguments(String[] arguments) {
+    private void setArguments(String[] arguments) {
         this.arguments = arguments;
     }
 
