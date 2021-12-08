@@ -135,7 +135,7 @@
 					<version>2.5</version>
 				</plugin>
 				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
+					<artifactId>maven-com.iluwatar.serviceadapter.soapdemo.resources-plugin</artifactId>
 					<version>2.6</version>
 				</plugin>
 				<plugin>
@@ -208,7 +208,7 @@
 							<exclude>**/*.launch</exclude>
 							<exclude>**/ide/eclipse/launch/**</exclude>
 							<exclude>**/ide/intellij/launch/**</exclude>
-							<exclude>src/site/resources/ide/eclipse/**</exclude>
+							<exclude>src/site/com.iluwatar.serviceadapter.soapdemo.resources/ide/eclipse/**</exclude>
 
 							<exclude>**/rebel.xml</exclude>
 							<exclude>**/*.gitignore</exclude>

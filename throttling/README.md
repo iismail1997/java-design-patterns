@@ -11,7 +11,7 @@ tags:
 
 ## Intent
 
-Ensure that a given client is not able to access service resources more than the assigned limit.
+Ensure that a given client is not able to access service com.iluwatar.serviceadapter.soapdemo.resources more than the assigned limit.
 
 ## Explanation
 
@@ -26,9 +26,9 @@ In plain words
 
 [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling) says
 
-> Control the consumption of resources used by an instance of an application, an individual tenant, 
+> Control the consumption of com.iluwatar.serviceadapter.soapdemo.resources used by an instance of an application, an individual tenant, 
 > or an entire service. This can allow the system to continue to function and meet service level 
-> agreements, even when an increase in demand places an extreme load on resources.
+> agreements, even when an increase in demand places an extreme load on com.iluwatar.serviceadapter.soapdemo.resources.
 
 **Programmatic Example**
 
@@ -185,7 +185,7 @@ second and Nike to 6.
 The Throttling pattern should be used:
 
 * When a service access needs to be restricted to not have high impacts on the performance of the service.
-* When multiple clients are consuming the same service resources and restriction has to be made according to the usage per client.
+* When multiple clients are consuming the same service com.iluwatar.serviceadapter.soapdemo.resources and restriction has to be made according to the usage per client.
 
 ## Credits
 

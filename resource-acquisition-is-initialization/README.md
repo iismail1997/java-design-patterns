@@ -17,4 +17,4 @@ Resource Acquisition Is Initialization pattern can be used to implement exceptio
 ## Applicability
 Use the Resource Acquisition Is Initialization pattern when
 
-* You have resources that must be closed in every condition
+* You have com.iluwatar.serviceadapter.soapdemo.resources that must be closed in every condition

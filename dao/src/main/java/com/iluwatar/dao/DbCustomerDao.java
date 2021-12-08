@@ -50,7 +50,7 @@ public class DbCustomerDao implements CustomerDao {
    * Get all customers as Java Stream.
    *
    * @return a lazily populated stream of customers. Note the stream returned must be closed to free
-   *     all the acquired resources. The stream keeps an open connection to the database till it is
+   *     all the acquired com.iluwatar.serviceadapter.soapdemo.resources. The stream keeps an open connection to the database till it is
    *     complete or is closed manually.
    */
   @Override

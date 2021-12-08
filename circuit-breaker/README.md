@@ -159,7 +159,7 @@ public class MonitoringService {
   }
 }
 ```
-As it can be seen, it does the call to get local resources directly, but it wraps the call to 
+As it can be seen, it does the call to get local com.iluwatar.serviceadapter.soapdemo.resources directly, but it wraps the call to 
 remote (costly) service in a circuit breaker object, which prevents faults as follows:
 
 ```java
@@ -298,7 +298,7 @@ implemented by it.
 - We initialize the Circuit Breaker object with certain parameters: `timeout`, `failureThreshold` and `retryTimePeriod` which help determine how resilient the API is.
 - Initially, we are in the `closed` state and nos remote calls to the API have occurred.
 - Every time the call succeeds, we reset the state to as it was in the beginning.
-- If the number of failures cross a certain threshold, we move to the `open` state, which acts just like an open circuit and prevents remote service calls from being made, thus saving resources. (Here, we return the response called ```stale response from API```)
+- If the number of failures cross a certain threshold, we move to the `open` state, which acts just like an open circuit and prevents remote service calls from being made, thus saving com.iluwatar.serviceadapter.soapdemo.resources. (Here, we return the response called ```stale response from API```)
 - Once we exceed the retry timeout period, we move to the `half-open` state and make another call to the remote service again to check if the service is working so that we can serve fresh content. A failure sets it back to `open` state and another attempt is made after retry timeout period, while a success sets it to `closed` state so that everything starts working normally again. 
 
 ## Class diagram

@@ -50,7 +50,7 @@ public class SameThreadDispatcher implements Dispatcher {
   }
 
   /**
-   * No resources to free.
+   * No com.iluwatar.serviceadapter.soapdemo.resources to free.
    */
   @Override
   public void stop() {

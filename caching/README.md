@@ -10,8 +10,8 @@ tags:
 ---
 
 ## Intent
-To avoid expensive re-acquisition of resources by not releasing
-the resources immediately after their use. The resources retain their identity, are kept in some
+To avoid expensive re-acquisition of com.iluwatar.serviceadapter.soapdemo.resources by not releasing
+the com.iluwatar.serviceadapter.soapdemo.resources immediately after their use. The com.iluwatar.serviceadapter.soapdemo.resources retain their identity, are kept in some
 fast-access storage, and are re-used to avoid having to acquire them again.
 
 ## Class diagram

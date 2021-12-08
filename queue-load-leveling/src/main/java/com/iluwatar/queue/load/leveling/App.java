@@ -34,7 +34,7 @@ import lombok.extern.slf4j.Slf4j;
  * issues.
  *
  * <p>A service could be a component that is part of the same solution as the tasks that utilize
- * it, or it could be a third-party service providing access to frequently used resources such as a
+ * it, or it could be a third-party service providing access to frequently used com.iluwatar.serviceadapter.soapdemo.resources such as a
  * cache or a storage service. If the same service is utilized by a number of tasks running
  * concurrently, it can be difficult to predict the volume of requests to which the service might be
  * subjected at any given point in time.

@@ -53,7 +53,7 @@ public interface Dispatcher {
   void onChannelReadEvent(AbstractNioChannel channel, Object readObject, SelectionKey key);
 
   /**
-   * Stops dispatching events and cleans up any acquired resources such as threads.
+   * Stops dispatching events and cleans up any acquired com.iluwatar.serviceadapter.soapdemo.resources such as threads.
    *
    * @throws InterruptedException if interrupted while stopping dispatcher.
    */

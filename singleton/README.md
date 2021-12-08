@@ -77,7 +77,7 @@ Use the Singleton pattern when
 ## Consequences
 
 * Violates Single Responsibility Principle (SRP) by controlling their own creation and lifecycle.
-* Encourages using a global shared instance which prevents an object and resources used by this object from being deallocated.     
+* Encourages using a global shared instance which prevents an object and com.iluwatar.serviceadapter.soapdemo.resources used by this object from being deallocated.     
 * Creates tightly coupled code. The clients of the Singleton become difficult to test.
 * Makes it almost impossible to subclass a Singleton.
 

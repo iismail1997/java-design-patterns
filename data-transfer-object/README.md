@@ -106,7 +106,7 @@ Now fetching customer information is easy since we have the DTOs.
 Use the Data Transfer Object pattern when:
 
 * The client is asking for multiple information. And the information is related.
-* When you want to boost the performance to get resources.
+* When you want to boost the performance to get com.iluwatar.serviceadapter.soapdemo.resources.
 * You want reduced number of remote calls.
 
 ## Credits

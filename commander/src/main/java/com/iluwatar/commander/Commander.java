@@ -56,7 +56,7 @@ import org.slf4j.LoggerFactory;
  * payment succeeds; two, if payment fails definitively; and three, if payment fails in the first
  * attempt. If the message is not sent, this is also queued and is added to employee db. We also
  * have a time limit for each instruction to be completed, after which, the instruction is not
- * executed, thereby ensuring that resources are not held for too long. In the rare occasion in
+ * executed, thereby ensuring that com.iluwatar.serviceadapter.soapdemo.resources are not held for too long. In the rare occasion in
  * which everything fails, an individual would have to step in to figure out how to solve the
  * issue.</p>
  * <p>We have abstract classes {@link Database} and {@link Service} which are extended

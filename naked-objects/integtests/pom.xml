@@ -38,7 +38,7 @@
 	<build>
 		<testResources>
 			<testResource>
-				<directory>src/test/resources</directory>
+				<directory>src/test/com.iluwatar.serviceadapter.soapdemo.resources</directory>
 			</testResource>
 			<testResource>
 				<directory>src/test/java</directory>

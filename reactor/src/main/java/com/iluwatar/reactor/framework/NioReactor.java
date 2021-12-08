@@ -90,7 +90,7 @@ public class NioReactor {
   }
 
   /**
-   * Stops the reactor and related resources such as dispatcher.
+   * Stops the reactor and related com.iluwatar.serviceadapter.soapdemo.resources such as dispatcher.
    *
    * @throws InterruptedException if interrupted while stopping the reactor.
    * @throws IOException          if any I/O error occurs.

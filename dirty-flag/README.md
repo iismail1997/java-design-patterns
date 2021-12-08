@@ -13,7 +13,7 @@ tags:
 * IsDirty pattern
 
 ## Intent
-To avoid expensive re-acquisition of resources. The resources retain their identity, are kept in some
+To avoid expensive re-acquisition of com.iluwatar.serviceadapter.soapdemo.resources. The com.iluwatar.serviceadapter.soapdemo.resources retain their identity, are kept in some
 fast-access storage, and are re-used to avoid having to acquire them again.
 
 ## Class diagram

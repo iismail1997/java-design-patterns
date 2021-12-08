@@ -33,7 +33,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
- * This represents the <i>Handle</i> of Reactor pattern. These are resources managed by OS which can
+ * This represents the <i>Handle</i> of Reactor pattern. These are com.iluwatar.serviceadapter.soapdemo.resources managed by OS which can
  * be submitted to {@link NioReactor}.
  *
  * <p>This class serves has the responsibility of reading the data when a read event occurs and

@@ -48,7 +48,7 @@ import lombok.extern.slf4j.Slf4j;
  * class that supports this pattern can allow you to:- (1) Perform time-consuming tasks, such as
  * downloads and database operations, "in the background," without interrupting your application.
  * (2) Execute multiple operations simultaneously, receiving notifications when each completes. (3)
- * Wait for resources to become available without stopping ("hanging") your application. (4)
+ * Wait for com.iluwatar.serviceadapter.soapdemo.resources to become available without stopping ("hanging") your application. (4)
  * Communicate with pending asynchronous operations using the familiar events-and-delegates model.
  *
  * @see EventManager

@@ -42,7 +42,7 @@ import lombok.extern.slf4j.Slf4j;
  * store and the logic they implement: data loaders, user interfaces, integration gateways, and
  * others. Despite their different purposes, these interfaces often need common interactions with
  * the application to access and manipulate its data and invoke its business logic. The interactions
- * may be complex, involving transactions across multiple resources and the coordination of several
+ * may be complex, involving transactions across multiple com.iluwatar.serviceadapter.soapdemo.resources and the coordination of several
  * responses to an action. Encoding the logic of the interactions separately in each interface
  * causes a lot of duplication.
  *

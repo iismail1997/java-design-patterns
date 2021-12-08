@@ -37,7 +37,7 @@ import lombok.extern.slf4j.Slf4j;
  * it was going to do. To roll back to the state before the operations, it returns the memento
  * object to the originator. The memento object itself is an opaque object (one which the caretaker
  * cannot, or should not, change). When using this pattern, care should be taken if the originator
- * may change other objects or resources - the memento pattern operates on a single object.
+ * may change other objects or com.iluwatar.serviceadapter.soapdemo.resources - the memento pattern operates on a single object.
  *
  * <p>In this example the object ({@link Star}) gives out a "memento" ({@link StarMemento}) that
  * contains the state of the object. Later on the memento can be set back to the object restoring
