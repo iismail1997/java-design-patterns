@@ -55,8 +55,8 @@ to market in half.
 ## Explanation
 
 Serverless computing is a cloud computing execution model in which the cloud provider 
-dynamically manages the allocation of machine resources. Pricing is based on the 
-actual amount of resources consumed by an application, rather than on pre-purchased 
+dynamically manages the allocation of machine com.iluwatar.serviceadapter.soapdemo.resources. Pricing is based on the 
+actual amount of com.iluwatar.serviceadapter.soapdemo.resources consumed by an application, rather than on pre-purchased 
 units of capacity. 
 
 ## Class diagram
@@ -139,7 +139,7 @@ dependencies of the function.
 * `serverless deploy --stage=dev --verbose`
 
 Based on the configuration in `serverless.yml` serverless framework creates following 
-resources
+com.iluwatar.serviceadapter.soapdemo.resources
 
 * CloudFormation stack for S3 (ServerlessDeploymentBucket)
 * IAM Role (IamRoleLambdaExecution)

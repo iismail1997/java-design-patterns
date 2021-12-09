@@ -3,12 +3,12 @@ package com.iluwatar.serviceadapter;
 public class CalculatorServiceImpl implements CalculatorService {
 
     /* Funtion to add two integers*/
-    public int addIntegers(int a, int b) {
+    public long addIntegers(long a, long b) {
         return a + b ;
     }
 
-    /* Funtion to divide two integers*/
-    public int divideIntegers(int a, int b){
+    /* Function to divide two integers using a service adapter*/
+    public long divideIntegers(long a, long b) {
         ServiceAdapter serviceAdapter = new ServiceAdapter();
         return serviceAdapter.divideIntegers(a, b);
     }

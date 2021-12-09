@@ -30,7 +30,7 @@ import lombok.extern.slf4j.Slf4j;
  * The intention of the Circuit Builder pattern is to handle remote failures robustly, which is to
  * mean that if a service is dependant on n number of other services, and m of them fail, we should
  * be able to recover from that failure by ensuring that the user can still use the services that
- * are actually functional, and resources are not tied up by uselessly by the services which are not
+ * are actually functional, and com.iluwatar.serviceadapter.soapdemo.resources are not tied up by uselessly by the services which are not
  * working. However, we should also be able to detect when any of the m failing services become
  * operational again, so that we can use it
  * </p>
@@ -40,7 +40,7 @@ import lombok.extern.slf4j.Slf4j;
  * service is responsible for calling three services: a local service, a quick remove service
  * {@link QuickRemoteService} and a delayed remote service {@link DelayedRemoteService} , and by
  * using the circuit breaker construction we ensure that if the call to remote service is going to
- * fail, we are going to save our resources and not make the function call at all, by wrapping our
+ * fail, we are going to save our com.iluwatar.serviceadapter.soapdemo.resources and not make the function call at all, by wrapping our
  * call to the remote services in the {@link DefaultCircuitBreaker} implementation object.
  * </p>
  * <p>

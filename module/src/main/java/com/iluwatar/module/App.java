@@ -60,7 +60,7 @@ public class App {
    */
   public static void unprepare() {
 
-    /* Close all resources */
+    /* Close all com.iluwatar.serviceadapter.soapdemo.resources */
     fileLoggerModule.unprepare();
     consoleLoggerModule.unprepare();
   }

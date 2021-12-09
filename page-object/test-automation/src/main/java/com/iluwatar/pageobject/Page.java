@@ -33,7 +33,7 @@ public abstract class Page {
   /**
    * Application Under Test path This directory location is where html web pages are located.
    */
-  public static final String AUT_PATH = "../sample-application/src/main/resources/sample-ui/";
+  public static final String AUT_PATH = "../sample-application/src/main/com.iluwatar.serviceadapter.soapdemo.resources/sample-ui/";
 
   protected final WebClient webClient;
 

@@ -1,38 +1,53 @@
 @startuml 
 package com.iluwatar.serviceadapter {
-    class App{
-    + void main (String[] )
-    }
-
     class ServiceAdapter{
-    + int divideIntegers (int A, int )
+    + long divideIntegers (long a, long b )
     }
 
     interface CalculatorService {
-    + int addIntegers (int A, int )
-    + int divideIntegers (int A, int )
+    + long addIntegers (long a, long b )
+    + long divideIntegers (long a, long b )
     }
-    class DivideIntegerServiceRequest{
-    - java.lang.String url
-    - java.lang.String soapMethod
-    - java.lang.String[] arguments
-    + void SoapServiceRequest ()
-    + java.lang.String getUrl ()
-    + void setUrl (String )
-    + java.lang.String getSoapMethod ()
-    + void setSoapMethod (String )
-    + java.lang.String[] getArguments ()
-    + void setArguments (String[] )
-    }
-    class DivideIntegerServiceResponse{
-    }
-    class CalculatorServiceImpl{
-    + int addIntegers (int A, int )
-    + int divideIntegers (int A, int )
-    }
+    CalculatorService <|.. CalculatorServiceImpl
+      class CalculatorServiceImpl{
+        + long addIntegers (long a, long b )
+        + long divideIntegers (long a, long b )
+        }
+  CalculatorServiceImpl --> ServiceAdapter
+   ServiceAdapter --> SOAPDemo
+  class SOAPDemo{
+  - java.net.URL SOAPDEMO_WSDL_LOCATION
+  - javax.xml.ws.WebServiceException SOAPDEMO_EXCEPTION
+  - javax.xml.namespace.QName SOAPDEMO_QNAME
+  - javax.xml.ws.spi.ServiceDelegate delegate
+  + void SOAPDemo ()
+  + void SOAPDemo (WebServiceFeature... )
+  + void SOAPDemo (URL )
+  + void SOAPDemo (URL wsdlLocation, WebServiceFeature... )
+  + void SOAPDemo (URL wsdlLocation, QName )
+  + void SOAPDemo (URL wsdlLocation, QName serviceName, WebServiceFeature... )
+  + com.iluwatar.serviceadapter.SOAPDemoSoap getSOAPDemoSoap ()
+  + com.iluwatar.serviceadapter.SOAPDemoSoap getSOAPDemoSoap (WebServiceFeature... )
+  - java.net.URL __getWsdlLocation ()
+  }
+   SOAPDemo --> SOAPDemoSoap
+  interface SOAPDemoSoap {
+  + long divideInteger (Long arg1, Long arg2 )
+  }
+    SOAPDemoSoap --> DivideInteger
+  class DivideInteger{
+  # java.lang.Long arg1
+  # java.lang.Long arg2
+  + java.lang.Long getArg1 ()
+  + void setArg1 (Long )
+  + java.lang.Long getArg2 ()
+  + void setArg2 (Long )
+  }
+   SOAPDemoSoap --> DivideIntegerResponse
+  class DivideIntegerResponse{
+  # long divideIntegerResult
+  + long getDivideIntegerResult ()
+  + void setDivideIntegerResult (long )
+  }
 }
-CalculatorService <|.. CalculatorServiceImpl
-CalculatorServiceImpl --> ServiceAdapter
-ServiceAdapter --> DivideIntegerServiceRequest
-ServiceAdapter --> DivideIntegerServiceResponse
 @enduml

@@ -129,7 +129,7 @@ the content globally.
 
 Use the Static Content Hosting pattern when you want to:
 
-* Minimize the hosting cost for websites and applications that contain some static resources.
+* Minimize the hosting cost for websites and applications that contain some static com.iluwatar.serviceadapter.soapdemo.resources.
 * Build a globally available web site with static content
 * Monitor the web site traffic, bandwidth usage, costs etc.
 

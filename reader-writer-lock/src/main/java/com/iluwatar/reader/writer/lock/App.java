@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * In a multiple thread applications, the threads may try to synchronize the shared resources
+ * In a multiple thread applications, the threads may try to synchronize the shared com.iluwatar.serviceadapter.soapdemo.resources
  * regardless of read or write operation. It leads to a low performance especially in a "read more
  * write less" system as indeed the read operations are thread-safe to another read operation.
  *

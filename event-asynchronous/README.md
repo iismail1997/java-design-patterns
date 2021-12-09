@@ -15,7 +15,7 @@ of the complex issues inherent in multithreaded design. Using a class that suppo
 
 1. Perform time-consuming tasks, such as downloads and database operations, "in the background," without interrupting your application.
 2. Execute multiple operations simultaneously, receiving notifications when each completes.
-3. Wait for resources to become available without stopping ("hanging") your application.
+3. Wait for com.iluwatar.serviceadapter.soapdemo.resources to become available without stopping ("hanging") your application.
 4. Communicate with pending asynchronous operations using the familiar events-and-delegates model.
 
 ## Class diagram

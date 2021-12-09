@@ -12,12 +12,12 @@ tags:
 
 ## Intent
 
-Transparently retry certain operations that involve communication with external resources, 
+Transparently retry certain operations that involve communication with external com.iluwatar.serviceadapter.soapdemo.resources, 
 particularly over the network, isolating calling code from the retry implementation details.
 
 ## Explanation
 
-Retry pattern consists retrying operations on remote resources over the network a set number of 
+Retry pattern consists retrying operations on remote com.iluwatar.serviceadapter.soapdemo.resources over the network a set number of 
 times. It closely depends on both business and technical requirements: How much time will the 
 business allow the end user to wait while the operation finishes? What are the performance 
 characteristics of the remote resource during peak loads as well as our application as more threads
